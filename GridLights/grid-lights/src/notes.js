@@ -3,7 +3,7 @@ let notes = `
 let timer = setTimeout(()=>{
     clearTieout( timer )  ; 
     } , 200 )
-    2) ensure UI is sclable , for that box -> circle 
+2) ensure UI is sclable , for that box -> circle 
     
         
 
