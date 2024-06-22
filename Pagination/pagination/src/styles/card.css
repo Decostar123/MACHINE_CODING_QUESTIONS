@@ -1,0 +1,8 @@
+.productImg{
+    width : 100% !important;
+    height  : 40vh ; 
+    object-fit: cover;
+}
+.productDiv{
+    border : 20px solid gray ; 
+}

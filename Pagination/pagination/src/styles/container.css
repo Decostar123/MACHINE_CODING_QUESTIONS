@@ -1,0 +1,10 @@
+.outer{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    place-items: center;
+    row-gap: 20px;
+    margin-top: 10vh;
+    min-height : 120vh;
+    justify-content: space-evenly;
+    /* width : 100vw ;  */
+}

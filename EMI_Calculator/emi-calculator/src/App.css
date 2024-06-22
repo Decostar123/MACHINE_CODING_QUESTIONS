@@ -1,0 +1,27 @@
+.outer{
+  font-family: Arial, Helvetica, sans-serif;
+  padding : 20px;
+}
+
+
+.inputBoxes{
+  margin-top : 3vh;
+}
+.inputBoxes p{
+  font-weight: bold;
+  margin-top : 3vh;
+
+}
+.inputBoxes input{
+  width : 100% ;
+  margin-top : 3vh;
+
+  padding : 5px ;
+}
+.price{
+  margin-top: 3vh;
+}
+.payments{
+  text-decoration: underline;
+  font-weight: bold;
+}

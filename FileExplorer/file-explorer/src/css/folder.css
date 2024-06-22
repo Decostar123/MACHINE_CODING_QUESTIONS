@@ -1,0 +1,41 @@
+.outer{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.inner{
+    width : 30vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(176, 171, 171);
+    /* padding : 5px;  */
+    align-items: center;
+    cursor: pointer;
+    
+}
+.options button{
+    cursor: pointer;
+}
+.folderName{
+    margin : 5px; 
+}
+.inner button{
+    border: 2px solid black;
+    padding : 5px ; 
+    width : 60px; 
+    border-radius: 5px;
+}
+
+.input{
+    
+   
+    margin-left: 5vw;
+    margin-top: 10px; 
+    
+}
+.input input{
+    width  : 20vw;
+    border: 2px solid black ; 
+    font-size: 20px;
+    padding : 5px ;
+    outline : 0; 
+}

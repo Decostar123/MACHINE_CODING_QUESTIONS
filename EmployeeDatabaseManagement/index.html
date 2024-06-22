@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+
+    <div class="outer">
+        <div class="box-1">
+            <h1>Employee Database Management</h1>
+            <button class="newEmpl">Add Employee</button>
+        </div>
+        <div class="box-2">
+            <div class="left">
+                <p class="heading">Employee List</p>
+                <div class="employee-list">
+                  <div class="name-list">
+                    <p class="name"> Decostar Shrma</p>
+                    <p class="cross">✂</p>
+                  </div>
+                  
+                </div>
+            </div>
+            <div class="right">
+                <p  class="heading">Employee Informaation</p>
+               <div class="fullBio">
+                <div class="person-bio">
+                 
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <div id="black">
+            <div></div>
+    </div>
+    <div class="newUser">
+        <p>Add a new Employee</p>
+        <div class="newUserForm">
+           <form class="userForm" >
+            <input type="text" placeholder="firstName" name="firstName" required>
+            <input type="text" placeholder="lastName" name="lastName" required>
+            <input type="text" placeholder="Image URL" name="imageUrl" required/>
+            <input  type="submit"/>
+           </form>
+        </div>
+    </div>
+
+    <script type="module" src="./src/index.js"></script>
+</body>
+</html>

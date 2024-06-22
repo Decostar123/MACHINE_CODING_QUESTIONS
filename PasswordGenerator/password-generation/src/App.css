@@ -1,0 +1,71 @@
+.container{
+  background-color: #24232b;
+  padding :25px;
+  margin: 20px;
+  border-radius: 3px;
+
+}
+.header{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+button{
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2a8b8b;
+  color : white ; 
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.copyBtn{
+  height: 30px;
+  font-size: 10px;
+}
+.charLength{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+.charLength span{
+  width : 100%; 
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+.checkboxes{
+  display: grid; 
+  grid-template-columns: repeat(2,1fr);
+  font-family: Arial, Helvetica, sans-serif;
+  gap : 5px ; 
+  font-size: 16px ; 
+  font-weight: 700;
+  color : white  ; 
+  margin-bottom: 5vh;
+}
+.checkboxes input{
+  margin-right : 10px ;
+  
+}
+.checkboxes label{
+  cursor: pointer;
+}
+
+.generateBtn{
+  width : 100% ; 
+  font-size: 20px;
+  padding: 20px;
+}
+.errorMessage{
+  color : red;
+}

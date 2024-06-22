@@ -1,0 +1,52 @@
+.App{
+  display: flex;
+  justify-content: center;
+}
+.outer{
+
+  width : 40vw ; 
+  height : 6vh ; 
+  /* border : 2px solid black;  */
+  outline : 0 ; 
+  margin-top: 10vh;
+  border-radius: 100px;
+  position: relative;
+  background-color: rgb(128, 128, 128 , 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner{
+  position : absolute !important;
+  top : 0 ; 
+  left: 0;
+  background-color: #00c253;
+  height : 100% ; 
+  border-radius: 100px;
+
+
+}
+.widthLabel{
+  /* position: absolute;
+  z-index: 500;
+  top:25%;
+  left : 48%; */
+  position: relative;
+  z-index: 100;
+  font-weight: bold;
+  
+}
+.widthStyle{
+  animation: widthanimation  ;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes widthanimation {
+  from{
+    width: 0%;
+  }
+  to{
+    width : 100% ; 
+  }
+}

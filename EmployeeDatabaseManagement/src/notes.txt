@@ -1,0 +1,45 @@
+1 ....................................
+
+To execute a function after the content of the web page has fully loaded, you can use the DOMContentLoaded event or the load event. Here are the differences and examples for both:
+
+DOMContentLoaded Event
+This event is fired when the HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.
+
+javascript
+Copy code
+document.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+    // Your code here
+});
+load Event
+This event is fired when the entire page, including all dependent resources such as stylesheets and images, has finished loading.
+
+javascript
+Copy code
+window.addEventListener('load', (event) => {
+    console.log('Page fully loaded');
+    // Your code here
+});
+Choosing the Right Event
+Use DOMContentLoaded if you need to start executing your script as soon as the DOM is ready (i.e., the structure of the document is fully loaded and can be manipulated).
+Use load if you need to wait until the entire page is fully loaded, including all styles, images, and subframes.
+
+
+2) 
+
+add css varibles in css and use it by 
+:root{
+    --btn-hover : blue 
+}
+
+3) ben conventions 
+4) gloabl employee array and global employee id 
+
+5) e.target.tagName in place of event listeners on the individual div, have the event lisetner on the outer div  
+
+6) use rgb( _, _,_, 0.5) in place of opacity 0.5 to solve the z-index problem 
+
+7) const arr = [ ...fromData.entries() ] ; -> it will be array of array with a[0] -> name , a[1]-> will be th values 
+do tihis before terting , so th new array made 
+
+8) in the oalce of load event listener in the windoew we can use self calling function in javascriot 
