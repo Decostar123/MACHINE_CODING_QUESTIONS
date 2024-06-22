@@ -14,7 +14,7 @@ const Box = ({checked  , position , setBoxArray , setBoxPattern }) => {
         setBoxPattern(( prev)=>{
             let arr = prev; 
             let ind = arr.findIndex(( ele ) => ele === position ) ;
-            // in psh ou push destructure could have been used easily 
+            // in place of push destructure could have been used easily 
             if( ind === -1 ) arr.push( position ) ; 
 
             else arr.splice( ind , 1 )  ; 

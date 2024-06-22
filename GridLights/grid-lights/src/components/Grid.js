@@ -16,8 +16,8 @@ const Grid = () => {
         }
     } , [ boxPattern]) ; 
 
-    // can also use setInterval in place of setTimeOut + recursio :) 
-    // also with setInterval need to clear the evalue only once 
+    // can also use setInterval in place of setTimeOut + recursion :) 
+    // also with setInterval need to clear the interval timer  only once 
     function removeAllBoxes( ){
 
         console.log( "11111")
