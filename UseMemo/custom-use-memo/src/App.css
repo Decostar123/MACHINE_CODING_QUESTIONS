@@ -1,0 +1,11 @@
+.App{
+  display : flex ; 
+  flex-direction: column;
+  align-items: center;
+  gap : 20px ; 
+  margin-top : 10vh;
+}
+
+.App button{
+  padding :10px ; 
+}
