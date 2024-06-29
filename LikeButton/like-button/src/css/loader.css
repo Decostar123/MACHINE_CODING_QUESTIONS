@@ -1,0 +1,29 @@
+.loader{
+    width:20px ; 
+    height : 20px ; 
+   
+    border-radius: 50%;  
+  
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+.rotate-border-red{
+    border : 3px solid white ;  
+    border-bottom: 3px solid rgb(255, 0, 0 , 0.4) ;  
+}
+.rotate-border-green{
+    border : 3px solid rgb(0, 128, 0  , 0.4) ;  
+    border-bottom: 3px solid green ; 
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

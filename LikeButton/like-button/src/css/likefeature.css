@@ -1,0 +1,38 @@
+.border-red{
+    border : 5px solid red ; 
+}
+.border-green{
+    border : 5px solid green ; 
+}
+
+
+
+.font-red{
+    color : red ; 
+}
+.font-green{
+    color : green ;
+}
+.font-white{
+    color : white ; 
+}
+
+.bkg-red{
+ background-color: red;   
+}
+.bkg-white{
+    background-color: white;
+}
+.loaderbkg-lightgreen{
+    background-color: rgb(0, 128, 0 , 0.4);
+}
+.loaderbkg-white{
+    background-color: white
+}
+
+.loaderborder-green{
+    background-color: green ;
+}
+.loaderborder-red{
+    background-color: red ;
+}
