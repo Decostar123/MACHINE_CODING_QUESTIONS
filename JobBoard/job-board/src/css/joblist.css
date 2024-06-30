@@ -1,0 +1,16 @@
+.userdetail{
+    background-color: white;
+    margin:10px;
+    padding: 10px;
+    border:2px solid rgb(128, 128, 128 , 0.4 )  
+}
+.userdetail__title{
+    font-weight: bold;
+}
+.userdetail>p{
+    margin-bottom: 10px;
+}
+.userdetail__title:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
