@@ -9,6 +9,8 @@ let notes = `
      that your website sent traffic their way.
      https://outreachmonks.com/rel-noopener-noreferrer/
 
+     https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/
+     
     
     3)  ( new Date("") ).methosOfConversion()  or new Date("").methodOfConversion 
     4) load then style , Data layer -> UI laiyer ;)
