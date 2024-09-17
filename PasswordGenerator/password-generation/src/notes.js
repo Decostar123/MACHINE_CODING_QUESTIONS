@@ -15,9 +15,9 @@ let notes = `
     clarity and readability in some contexts.
     6) inline css if component is very small 
     7) createc omponents for all button, checkbox 
-    give customClass to a button, so that you can change the style -> it helps a lotin ctreating shared components 
+    give customClass to a button, so that you can change the style -> it helps a lot in creating shared components 
 
-    custom class for provideing the custom differnt styles 
+    custom class for providing the custom differnt styles 
     
     -
 

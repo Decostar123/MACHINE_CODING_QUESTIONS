@@ -13,9 +13,5 @@ let notes = `
     we can porovide input from outside, custom classes, custom styles, custome functions ,
     we can give them from outide
 
-    
-
-
-
 
 `

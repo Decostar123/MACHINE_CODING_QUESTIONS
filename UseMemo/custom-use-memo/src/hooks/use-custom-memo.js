@@ -4,9 +4,11 @@ import React , { useRef , useEffect} from 'react'
 // output is the result, with or without computation 
 
 
-// 1) NO NEED OF STORING THE FUNCTION
+// 1) NO NEED OF STORING THE FUNCTION, ( yeah actualy, because if the value changed, call the function which we get by input  ) 
 // 2) MAKE FUNCTION FOR THE ARRAY NOT EQUAL -> IT WILL COMPARE THE LENGTH + THE VALUES -> SO THAT WE CAN COMBINE THE  FUNCTION 
 // 3) I COULS HAVE ALSO USED USEeFFECT, BUT NOTE, NORMAL FUNCTINS PREVENT THE USE OF USEEFFECT 
+// WRONG, I THINK THE ABOV POINT IS NOT CORRECT, 
+// IF I USE FUNCTION AS DEPNDENCY, THEN EVERY TIME CALL A NEW cb IS ACTUALLY PASSED 
 // const useCustomMemo = (cb, deps) => {
 //   const ref = useRef({ deps, value: cb() });
 
@@ -23,11 +25,23 @@ import React , { useRef , useEffect} from 'react'
 
 
 
+
+
+
+
+// Should You Use useState or useRef?
+// If your memoized value affects rendering and you need to re-render the component
+//  when the cached value or dependencies change, then you should use useState.
+
+// If the memoized value does not need to trigger a re-render and is purely used for
+//  internal computation or caching, useRef is a better fit.
+
+
 const useCustomMemo = ( cb , depd ) => {
-    // a varinble or a state where we can stoe the cached value 
-    // we ompare changes in the dependency 
+    // a variable or a state where we can store the cached value 
+    // we compare changes in the dependency 
     // cleanup logic as well 
-    // return the emoized value 
+    // return the memoized value 
     const ref = useRef( null ) ; 
 
     useEffect(()=>{
@@ -60,6 +74,7 @@ const useCustomMemo = ( cb , depd ) => {
           console.log( " console.log( ref.current.ans ) 22222222 ; " ,  ref.current.ans ) ; 
           return ref.current.ans ; 
         }
+        // if the dependency have chnaged, then there is no need no have the same call back function again, but chalta h 
         ref.current.func = cb ; 
         ref.current.depd = depd   ; 
     

@@ -5,6 +5,8 @@ const Box = ({checked  , position , setBoxArray , setBoxPattern }) => {
         
         setBoxArray( ( prev )=>{
             // alert("hi")  
+            // THIS THING, HELPS TO REDUCE THE TIME COMPLEXITY, CHECKING DIRECT AT THAT POSTION, OTHERWISE NEED TO FIND 
+            // IN THAT INDEX 
             let arr = prev ; 
             console.log( arr   ) ; 
             arr[position] = !arr[position] ;

@@ -7,6 +7,7 @@ const Grid = () => {
     const [ boxArray , setBoxArray] = useState( new Array(9).fill( false ) ) ; 
     const [ boxPattern, setBoxPattern] = useState([]) ;
 
+    // in place of the dedicated, useEffect this can go in the if conditon only 
     useEffect(()=>{
         console.log( boxPattern.length )
         if( boxPattern.length === 8 ){  

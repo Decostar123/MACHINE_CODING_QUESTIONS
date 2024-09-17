@@ -27,7 +27,9 @@ function App({ onComplete=()=>{} }) {
         }
       } ) 
     } , 50 )
-
+  
+    // 50*100 = 5000 milli = 5 seconds, 
+  
     return ()=>clearInterval( timer ) ; 
   } , [ ])
   return (

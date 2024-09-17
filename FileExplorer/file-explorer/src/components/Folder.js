@@ -16,7 +16,8 @@ const Folder = ({data}) => {
         // console.log( data ) ; 
         document.addEventListener('click' , (e)=>{
             // console.log( e.target.className !== 'optionsBtn' )
-           if( e.target.className !== 'optionsBtn' &&  e.target.className !== 'input' )
+            console.log( e.target.className)
+           if( e.target.className === '')
            {
             setNewFolder(0) ; 
            }

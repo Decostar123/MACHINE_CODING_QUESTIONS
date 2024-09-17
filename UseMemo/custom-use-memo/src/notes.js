@@ -10,7 +10,7 @@ let notes = `
     will only be changed, and the other one will not be changed , diff algorithm 
     
     2) making cutom useMemo hook not only means behaviour, but the behaviour + the signatur or contract , 
-    input + the output 
+    input + the output , ( the behaviour includes the contract )
 
     3) Performance: useRef avoids unnecessary re-renders, making your component more efficient.
     Purpose: useState is intended for values that affect rendering, while useRef is for values 

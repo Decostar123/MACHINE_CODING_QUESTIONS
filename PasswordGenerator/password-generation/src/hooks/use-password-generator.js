@@ -19,7 +19,8 @@ const usePasswordGenerator = ()=>{
             setPassword("") ;
             return ; 
         }
-
+// THE FACT IS IF I TAKE ARRAY IN PLACE OF STRING, THEN PASWORD WILL HAVE PAATERN IN RANDOM CHARACTERS 
+// SO BETTER TO HAVE STRING 
         selectedOptions.forEach(( ele )=>{
             switch(ele.title){
                 case "Include UpperCase Letters":
@@ -39,6 +40,7 @@ const usePasswordGenerator = ()=>{
 
         })
 
+        // THIS GIVES TE TANDOMNESSS 
         for( let i= 1 ; i <= length ; i++ ){
                 let randomInd = Math.floor(Math.random()*charset.length ) ; 
                 generatedPassword += charset[randomInd] ; 
@@ -57,3 +59,6 @@ const usePasswordGenerator = ()=>{
 }
 
 export default usePasswordGenerator ; 
+
+
+// customo hook = helper function + use word 

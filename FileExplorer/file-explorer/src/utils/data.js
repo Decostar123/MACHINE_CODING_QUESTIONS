@@ -1,3 +1,5 @@
+// in the place of data.js should have used data.json file name + without any export 
+
 export const data = {
     isFolder : true, 
     name : "src", 

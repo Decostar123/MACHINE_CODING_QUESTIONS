@@ -22,7 +22,49 @@ window.addEventListener('load', (event) => {
 });
 Choosing the Right Event
 Use DOMContentLoaded if you need to start executing your script as soon as the DOM is ready (i.e., the structure of the document is fully loaded and can be manipulated).
-Use load if you need to wait until the entire page is fully loaded, including all styles, images, and subframes.
+Use load if you need to wait until the entire page is fully loaded, including all styles, images, and subframes
+
+
+----------------------------------------------------------NOTE ( START ) ------------------------------------------------------------------
+
+
+Difference between Document vs. Window in javascript 
+ChatGPT said:
+ChatGPT
+( https://chatgpt.com/c/66e54861-79b4-8001-86bc-a0ebbbdd48a8 )
+
+In JavaScript, document and window are both part of the browser's DOM (Document Object Model) but they represent different things:
+
+1. window Object:
+The window object is the global object in the browser environment. It represents the browser window or tab that is displaying a webpage.
+All global variables, functions, and objects created in JavaScript are part of the window object by default.
+It provides methods to control the browser (e.g., alert(), setTimeout(), open(), close(), scroll(), etc.) and properties related to the browser window (like innerWidth, innerHeight).
+It also contains the document object as one of its properties (window.document).
+Examples:
+javascript
+Copy code
+window.alert("Hello World!"); // Opens an alert dialog
+console.log(window.innerWidth); // Prints the width of the browser window
+2. document Object:
+The document object represents the content of the webpage (or the HTML document) that is loaded in the window.
+It is part of the window object but has its own specific methods and properties for interacting with the webpage content (HTML and CSS).
+It provides methods to access or manipulate elements in the page, such as getElementById(), querySelector(), createElement(), getElementsByClassName(), etc.
+The document object is essentially the root node of the DOM tree.
+Examples:
+javascript
+Copy code
+document.getElementById("myElement"); // Selects an element by ID
+console.log(document.title); // Prints the title of the current document
+Key Differences:
+Scope: window refers to the entire browser window, whereas document refers to the loaded HTML document.
+Methods: window controls browser-level interactions (like dialogs or window resizing), while document allows manipulation of webpage content (like adding, removing, or modifying HTML elements).
+Hierarchy: document is a property of window (window.document), but the reverse is not true.
+Summary:
+Use window for browser-level interactions.
+Use document for interacting with and manipulating the DOM content of the webpage.
+
+
+----------------------------------------------------------NOTE ( END ) ------------------------------------------------------------------
 
 
 2) 
@@ -31,6 +73,10 @@ add css varibles in css and use it by
 :root{
     --btn-hover : blue 
 }
+
+Note: The variable name must begin with two dashes (--) and it is case sensitive!
+
+
 
 3) ben conventions 
 4) gloabl employee array and global employee id 

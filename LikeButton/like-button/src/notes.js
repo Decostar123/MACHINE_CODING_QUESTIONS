@@ -13,7 +13,7 @@ let notes = `
      ---------------------------------------SOLUTION----------------------------------------------
      1) needed to take care about the hover effect, if liked no hover to be shown 
 
-     nope, ADD THE HOVER ON THE CLASS IN THE PLACE OF THE COMPONENT  .className:hover{}
+     nope, ADD THE HOVER ON THE CLASS IN THE PLACE OF THE COMPONENT  .className:hover{} .##pseudo class 
      Solutions 
 
      2) try catch for fetch to catch error or .catch part of the fetch request 

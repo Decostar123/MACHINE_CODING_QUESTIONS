@@ -87,6 +87,8 @@ document.querySelector(".userForm").addEventListener( 'submit' , (e)=>{
     e.preventDefault(); 
     let obj = {} ; 
     const formData = new FormData(e.target)
+
+    console.log( [...formData.entries()])
     for(let entry of formData){
         console.log( entry)
         obj[entry[0]]  = entry[1] ; 

@@ -54,7 +54,7 @@ class LRUCache{
 
     addToFront(key , value ){
         const newNode = { key , value ,next : null }  ; 
-
+// node is an object here, having key, value, and next pointing to a key basically 
         if( !this.head){
             this.head = newNode ; 
             this.tail = newNode ; 
